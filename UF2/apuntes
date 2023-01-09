@@ -1,0 +1,40 @@
+2.4
+    COMMENT             Te permite poner comentarios
+    AUTO_INCREMENT      Solo se puede usar en la clave primaria y solo puede haber uno por tabla,  te suma un numero a lo q quieras como las bobinas de la pescaderia. Nunca se va     recuperar ese numero y si añades uno no se volvera a usar
+
+2.5
+
+--restriccions_taula--
+
+[CONSTRAINT <<nom>>] tipus (columnes)
+    Ejemplo Constraint algo PRIMARY KEY (DNI)
+
+--FOREIGN KEYS--
+Constraint FK_COCHE_PERS FOREIGN KEY
+(dni_propietari) REFERENCES PERSONA(DNI)
+
+--POLÍTICA--
+RESTRICT,   La default, si hay dependientes no se puede borrar ni actualizar
+CASCADE,    Te permite cambiar todos los que tengan que ver
+set NULL,   Cambia el valor a nulo
+
+2.6
+
+--opcions_taula--
+
+)opcions;
+
+-> Motor
+    son una forma de guardar los datos
+
+    show engines;->  te enseña todos los motores 
+
+    engine = Innodb; para seleccionar el motor que quieras 
+    el Innodb es el q se usa pa las foreign keys, default con versiones nuevas de mysql
+
+-> Colacion
+    la ordenacion de las letras q quieres
+
+    CHARACTER SET utf8 COLLATE utf8_spanish_ci;
+    este es el español default
+

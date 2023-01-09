@@ -1,0 +1,6 @@
+create table pelicula (
+    id varchar(6),
+    titulo varchar(70),
+    anyo year,
+    genero varchar(15),
+);
