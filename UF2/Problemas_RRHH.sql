@@ -1,5 +1,4 @@
-/*Problema 1*/
-create table clients (
+/*Problema 1*/ create table clients (
     codi_cli mediumint,
     nom_cli varchar(30),
     nif char(10),
