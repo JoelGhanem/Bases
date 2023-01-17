@@ -1,4 +1,5 @@
-/*Problema 1*/ create table clients (
+/*Problema 1*/
+create table clients (
     codi_cli mediumint,
     nom_cli varchar(30),
     nif char(10),
@@ -61,3 +62,15 @@ alter table projectes add constraint data_inici check (data_inici < data_prev_fi
 
 /*Problema 11*/
 alter table empleats 
+
+/*Problema 14*/
+ALTER TABLE clients ADD UNIQUE (nif);
+
+/*Problema 15*/
+No dona error
+
+/*Problema 16*/
+S esborra tota la fila
+
+/*Problema 17*/
+ALTER TABLE empleats ADD CHECK (sou >= 100);
