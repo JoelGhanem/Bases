@@ -72,4 +72,26 @@ on delete CASCADE on update CASCADE
 
 /*Problema 13*/ /*MUY MAL*/
 ALTER TABLE projectes add constraint fk_codi_cli foreign key (codi_cli) 
+joel@joel-GL62MVR-7RFX:~$ 
 references clients (codi_cli);
+
+/*Problema 20*/
+/*SI he pogut introduir l'empleat*/
+
+/*Problema 21*/
+/*No es pot afegir l'empleat ja que el codi_empl es el mateix*/
+
+/*Problema 22*/
+insert into empleats (codi_empl, nom_empl, cognom_empl,sou, nom_dpt, ciutat_dpt, codi_proj) values (10, 'Pepe', 'Porras', DEFAULT, null, null, null);
+
+/*Problema 23*/
+delete from empleats where codi_empl = 10;
+
+/*Problema 24*/
+update empleats set codi_proj = 3 where codi_empl = 8;
+
+/*Problema 25*/
+/*El que succeeix es que es modifica ja que no hi ha cap restricció que ho pari*/
+
+/*Problema 26*/
+update empleats set codi_proj = null where codi_empl = 6;
